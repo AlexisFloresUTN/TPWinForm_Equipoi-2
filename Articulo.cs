@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoPractico2
 {
-    internal class Articulos
+    internal class Articulo
     {
         public int Id { get; set; }
         public string CodArt { get; set; }

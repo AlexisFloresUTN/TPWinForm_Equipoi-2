@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TrabajoPractico2
 {
-    internal class Marcas
+    internal class Categoria
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }
-    
+
     }
 }
