@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,12 @@
     <Compile Include="Formulario Principal.Designer.cs">
       <DependentUpon>Formulario Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioBuscar.Designer.cs">
+      <DependentUpon>FormularioBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Imagen.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Persona.cs" />
@@ -61,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formulario Principal.resx">
       <DependentUpon>Formulario Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioBuscar.resx">
+      <DependentUpon>FormularioBuscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
