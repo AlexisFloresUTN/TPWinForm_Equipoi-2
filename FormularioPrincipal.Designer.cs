@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -142,7 +143,7 @@
             // cambiarDeUsuarioToolStripMenuItem
             // 
             this.cambiarDeUsuarioToolStripMenuItem.Name = "cambiarDeUsuarioToolStripMenuItem";
-            this.cambiarDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.cambiarDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cambiarDeUsuarioToolStripMenuItem.Text = "Cambiar de usuario";
             // 
             // cbxMarcas
@@ -160,11 +161,11 @@
             // 
             this.lblMarcas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMarcas.AutoSize = true;
-            this.lblMarcas.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarcas.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarcas.Location = new System.Drawing.Point(711, 76);
             this.lblMarcas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMarcas.Name = "lblMarcas";
-            this.lblMarcas.Size = new System.Drawing.Size(44, 16);
+            this.lblMarcas.Size = new System.Drawing.Size(51, 18);
             this.lblMarcas.TabIndex = 7;
             this.lblMarcas.Text = "Marcas";
             // 
@@ -182,11 +183,11 @@
             // 
             this.lblArt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblArt.AutoSize = true;
-            this.lblArt.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArt.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArt.Location = new System.Drawing.Point(983, 74);
             this.lblArt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblArt.Name = "lblArt";
-            this.lblArt.Size = new System.Drawing.Size(56, 16);
+            this.lblArt.Size = new System.Drawing.Size(63, 18);
             this.lblArt.TabIndex = 9;
             this.lblArt.Text = "Articulos";
             // 
@@ -205,11 +206,11 @@
             // 
             this.lblCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCat.AutoSize = true;
-            this.lblCat.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCat.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCat.Location = new System.Drawing.Point(846, 73);
             this.lblCat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCat.Name = "lblCat";
-            this.lblCat.Size = new System.Drawing.Size(58, 16);
+            this.lblCat.Size = new System.Drawing.Size(66, 18);
             this.lblCat.TabIndex = 11;
             this.lblCat.Text = "Categoria";
             this.lblCat.Click += new System.EventHandler(this.label2_Click);
@@ -229,12 +230,12 @@
             this.btnAnterior.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAnterior.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnterior.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.Location = new System.Drawing.Point(713, 286);
+            this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
+            this.btnAnterior.Location = new System.Drawing.Point(714, 286);
             this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(56, 59);
             this.btnAnterior.TabIndex = 13;
-            this.btnAnterior.Text = "<";
             this.btnAnterior.UseVisualStyleBackColor = false;
             this.btnAnterior.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -243,17 +244,18 @@
             this.btnSiguiente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSiguiente.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSiguiente.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
             this.btnSiguiente.Location = new System.Drawing.Point(1048, 286);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(56, 59);
             this.btnSiguiente.TabIndex = 14;
-            this.btnSiguiente.Text = ">";
             this.btnSiguiente.UseVisualStyleBackColor = false;
             // 
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnModificar.Location = new System.Drawing.Point(187, 63);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
@@ -265,6 +267,7 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAgregar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(25, 62);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
@@ -272,30 +275,32 @@
             this.btnAgregar.Size = new System.Drawing.Size(92, 57);
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
             this.btnEliminar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEliminar.Location = new System.Drawing.Point(354, 62);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(92, 57);
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(518, 63);
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.Location = new System.Drawing.Point(528, 63);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(92, 57);
             this.btnBuscar.TabIndex = 18;
-            this.btnBuscar.Text = " Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 

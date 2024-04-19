@@ -64,7 +64,8 @@ namespace TrabajoPractico2
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FormularioModificar frmAgregar = new FormularioModificar();
+            frmAgregar.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
