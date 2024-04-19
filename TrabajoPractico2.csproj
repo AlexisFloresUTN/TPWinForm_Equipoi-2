@@ -49,11 +49,17 @@
   <ItemGroup>
     <Compile Include="Articulo.cs" />
     <Compile Include="Categoria.cs" />
-    <Compile Include="Formulario Principal.cs">
+    <Compile Include="FormularioPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Principal.Designer.cs">
-      <DependentUpon>Formulario Principal.cs</DependentUpon>
+    <Compile Include="FormularioPrincipal.Designer.cs">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAgregar.Designer.cs">
+      <DependentUpon>FormularioAgregar.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioBuscar.cs">
       <SubType>Form</SubType>
@@ -66,8 +72,11 @@
     <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formulario Principal.resx">
-      <DependentUpon>Formulario Principal.cs</DependentUpon>
+    <EmbeddedResource Include="FormularioAgregar.resx">
+      <DependentUpon>FormularioAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPrincipal.resx">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioBuscar.resx">
       <DependentUpon>FormularioBuscar.cs</DependentUpon>

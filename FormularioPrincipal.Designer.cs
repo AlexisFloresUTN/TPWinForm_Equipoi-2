@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +53,7 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagenes)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +69,8 @@
             this.usuarioToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1547, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1160, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,25 +80,25 @@
             this.guardarComoToolStripMenuItem,
             this.imprimirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // guardarComoToolStripMenuItem
             // 
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.guardarComoToolStripMenuItem.Text = "Guardar ";
             // 
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir ";
             // 
             // aBMLToolStripMenuItem
             // 
             this.aBMLToolStripMenuItem.Name = "aBMLToolStripMenuItem";
-            this.aBMLToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.aBMLToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.aBMLToolStripMenuItem.Text = "Configuracion";
             // 
             // verToolStripMenuItem
@@ -103,28 +106,28 @@
             this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ageToolStripMenuItem});
             this.verToolStripMenuItem.Name = "verToolStripMenuItem";
-            this.verToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.verToolStripMenuItem.Text = "Ver";
             this.verToolStripMenuItem.Click += new System.EventHandler(this.verToolStripMenuItem_Click);
             // 
             // ageToolStripMenuItem
             // 
             this.ageToolStripMenuItem.Name = "ageToolStripMenuItem";
-            this.ageToolStripMenuItem.Size = new System.Drawing.Size(83, 26);
+            this.ageToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             // 
             // opcionesToolStripMenuItem
             // 
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.opcionesAvanzadasToolStripMenuItem});
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
-            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.opcionesToolStripMenuItem.Text = "Opciones";
             this.opcionesToolStripMenuItem.Click += new System.EventHandler(this.opcionesToolStripMenuItem_Click);
             // 
             // opcionesAvanzadasToolStripMenuItem
             // 
             this.opcionesAvanzadasToolStripMenuItem.Name = "opcionesAvanzadasToolStripMenuItem";
-            this.opcionesAvanzadasToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.opcionesAvanzadasToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.opcionesAvanzadasToolStripMenuItem.Text = "Opciones avanzadas";
             // 
             // usuarioToolStripMenuItem
@@ -132,23 +135,24 @@
             this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cambiarDeUsuarioToolStripMenuItem});
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // cambiarDeUsuarioToolStripMenuItem
             // 
             this.cambiarDeUsuarioToolStripMenuItem.Name = "cambiarDeUsuarioToolStripMenuItem";
-            this.cambiarDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.cambiarDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.cambiarDeUsuarioToolStripMenuItem.Text = "Cambiar de usuario";
             // 
             // cbxMarcas
             // 
             this.cbxMarcas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxMarcas.FormattingEnabled = true;
-            this.cbxMarcas.Location = new System.Drawing.Point(951, 95);
+            this.cbxMarcas.Location = new System.Drawing.Point(713, 95);
+            this.cbxMarcas.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMarcas.Name = "cbxMarcas";
-            this.cbxMarcas.Size = new System.Drawing.Size(159, 24);
+            this.cbxMarcas.Size = new System.Drawing.Size(120, 24);
             this.cbxMarcas.TabIndex = 6;
             this.cbxMarcas.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -157,9 +161,10 @@
             this.lblMarcas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMarcas.AutoSize = true;
             this.lblMarcas.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarcas.Location = new System.Drawing.Point(948, 76);
+            this.lblMarcas.Location = new System.Drawing.Point(711, 76);
+            this.lblMarcas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMarcas.Name = "lblMarcas";
-            this.lblMarcas.Size = new System.Drawing.Size(51, 18);
+            this.lblMarcas.Size = new System.Drawing.Size(44, 16);
             this.lblMarcas.TabIndex = 7;
             this.lblMarcas.Text = "Marcas";
             // 
@@ -167,9 +172,10 @@
             // 
             this.cbxArt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxArt.FormattingEnabled = true;
-            this.cbxArt.Location = new System.Drawing.Point(1314, 95);
+            this.cbxArt.Location = new System.Drawing.Point(986, 95);
+            this.cbxArt.Margin = new System.Windows.Forms.Padding(2);
             this.cbxArt.Name = "cbxArt";
-            this.cbxArt.Size = new System.Drawing.Size(159, 24);
+            this.cbxArt.Size = new System.Drawing.Size(120, 24);
             this.cbxArt.TabIndex = 8;
             // 
             // lblArt
@@ -177,9 +183,10 @@
             this.lblArt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblArt.AutoSize = true;
             this.lblArt.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArt.Location = new System.Drawing.Point(1311, 74);
+            this.lblArt.Location = new System.Drawing.Point(983, 74);
+            this.lblArt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblArt.Name = "lblArt";
-            this.lblArt.Size = new System.Drawing.Size(63, 18);
+            this.lblArt.Size = new System.Drawing.Size(56, 16);
             this.lblArt.TabIndex = 9;
             this.lblArt.Text = "Articulos";
             // 
@@ -187,9 +194,10 @@
             // 
             this.cbxCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxCat.FormattingEnabled = true;
-            this.cbxCat.Location = new System.Drawing.Point(1131, 95);
+            this.cbxCat.Location = new System.Drawing.Point(848, 95);
+            this.cbxCat.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCat.Name = "cbxCat";
-            this.cbxCat.Size = new System.Drawing.Size(159, 24);
+            this.cbxCat.Size = new System.Drawing.Size(120, 24);
             this.cbxCat.TabIndex = 10;
             this.cbxCat.SelectedIndexChanged += new System.EventHandler(this.cbxCat_SelectedIndexChanged);
             // 
@@ -198,9 +206,10 @@
             this.lblCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCat.AutoSize = true;
             this.lblCat.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCat.Location = new System.Drawing.Point(1128, 73);
+            this.lblCat.Location = new System.Drawing.Point(846, 73);
+            this.lblCat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCat.Name = "lblCat";
-            this.lblCat.Size = new System.Drawing.Size(66, 18);
+            this.lblCat.Size = new System.Drawing.Size(58, 16);
             this.lblCat.TabIndex = 11;
             this.lblCat.Text = "Categoria";
             this.lblCat.Click += new System.EventHandler(this.label2_Click);
@@ -208,9 +217,10 @@
             // pcbImagenes
             // 
             this.pcbImagenes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcbImagenes.Location = new System.Drawing.Point(1032, 188);
+            this.pcbImagenes.Location = new System.Drawing.Point(774, 188);
+            this.pcbImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.pcbImagenes.Name = "pcbImagenes";
-            this.pcbImagenes.Size = new System.Drawing.Size(360, 260);
+            this.pcbImagenes.Size = new System.Drawing.Size(270, 260);
             this.pcbImagenes.TabIndex = 12;
             this.pcbImagenes.TabStop = false;
             // 
@@ -218,9 +228,11 @@
             // 
             this.btnAnterior.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAnterior.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAnterior.Location = new System.Drawing.Point(951, 285);
+            this.btnAnterior.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnterior.Location = new System.Drawing.Point(713, 286);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(75, 59);
+            this.btnAnterior.Size = new System.Drawing.Size(56, 59);
             this.btnAnterior.TabIndex = 13;
             this.btnAnterior.Text = "<";
             this.btnAnterior.UseVisualStyleBackColor = false;
@@ -230,9 +242,11 @@
             // 
             this.btnSiguiente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSiguiente.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSiguiente.Location = new System.Drawing.Point(1398, 285);
+            this.btnSiguiente.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Location = new System.Drawing.Point(1048, 286);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(75, 59);
+            this.btnSiguiente.Size = new System.Drawing.Size(56, 59);
             this.btnSiguiente.TabIndex = 14;
             this.btnSiguiente.Text = ">";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -240,9 +254,10 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(249, 63);
+            this.btnModificar.Location = new System.Drawing.Point(187, 63);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(123, 56);
+            this.btnModificar.Size = new System.Drawing.Size(92, 57);
             this.btnModificar.TabIndex = 15;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -251,19 +266,22 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(33, 62);
+            this.btnAgregar.Location = new System.Drawing.Point(25, 62);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(123, 56);
+            this.btnAgregar.Size = new System.Drawing.Size(92, 57);
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(472, 62);
+            this.btnEliminar.Location = new System.Drawing.Point(354, 62);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(123, 56);
+            this.btnEliminar.Size = new System.Drawing.Size(92, 57);
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -272,19 +290,27 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(690, 63);
+            this.btnBuscar.Location = new System.Drawing.Point(518, 63);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(123, 56);
+            this.btnBuscar.Size = new System.Drawing.Size(92, 57);
             this.btnBuscar.TabIndex = 18;
             this.btnBuscar.Text = " Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // FormularioPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(1547, 615);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1160, 615);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
@@ -299,8 +325,9 @@
             this.Controls.Add(this.lblMarcas);
             this.Controls.Add(this.cbxMarcas);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormularioPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "                                                      ";
@@ -338,6 +365,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

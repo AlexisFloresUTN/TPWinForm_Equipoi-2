@@ -81,5 +81,21 @@ namespace TrabajoPractico2
         {
 
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormularioAgregar frmAgregar = new FormularioAgregar();
+            frmAgregar.ShowDialog();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            FormularioBuscar frmBuscar = new FormularioBuscar();
+            frmBuscar.ShowDialog();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+                    }
     }
 }
