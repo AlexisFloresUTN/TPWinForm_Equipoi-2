@@ -31,5 +31,15 @@ namespace TrabajoPractico2
         {
 
         }
+
+        private void btnModificarGuardar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

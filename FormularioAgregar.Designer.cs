@@ -28,61 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbxUrl2 = new System.Windows.Forms.TextBox();
+            this.tbxUrl1 = new System.Windows.Forms.TextBox();
+            this.lblUrl1 = new System.Windows.Forms.Label();
             this.lblUrl2 = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.cmxMarca = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cbxMarca = new System.Windows.Forms.ComboBox();
+            this.tbxNombre = new System.Windows.Forms.TextBox();
+            this.cbxCat = new System.Windows.Forms.ComboBox();
+            this.tbxDescrip = new System.Windows.Forms.TextBox();
             this.btnModificarGuardar = new System.Windows.Forms.Button();
+            this.lblId = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox2
+            // tbxUrl2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(161, 130);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(413, 27);
-            this.textBox2.TabIndex = 49;
+            this.tbxUrl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUrl2.Location = new System.Drawing.Point(215, 160);
+            this.tbxUrl2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.tbxUrl2.Name = "tbxUrl2";
+            this.tbxUrl2.Size = new System.Drawing.Size(549, 32);
+            this.tbxUrl2.TabIndex = 49;
             // 
-            // textBox1
+            // tbxUrl1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(161, 91);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(413, 27);
-            this.textBox1.TabIndex = 48;
+            this.tbxUrl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUrl1.Location = new System.Drawing.Point(215, 112);
+            this.tbxUrl1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.tbxUrl1.Name = "tbxUrl1";
+            this.tbxUrl1.Size = new System.Drawing.Size(549, 32);
+            this.tbxUrl1.TabIndex = 48;
             // 
-            // label1
+            // lblUrl1
             // 
-            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 91);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "Imagen 1 (url):";
+            this.lblUrl1.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
+            this.lblUrl1.AutoSize = true;
+            this.lblUrl1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUrl1.Location = new System.Drawing.Point(44, 120);
+            this.lblUrl1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.lblUrl1.Name = "lblUrl1";
+            this.lblUrl1.Size = new System.Drawing.Size(137, 24);
+            this.lblUrl1.TabIndex = 47;
+            this.lblUrl1.Text = "Imagen 1 (url):";
             // 
             // lblUrl2
             // 
             this.lblUrl2.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
             this.lblUrl2.AutoSize = true;
             this.lblUrl2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUrl2.Location = new System.Drawing.Point(33, 137);
-            this.lblUrl2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblUrl2.Location = new System.Drawing.Point(45, 168);
+            this.lblUrl2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblUrl2.Name = "lblUrl2";
-            this.lblUrl2.Size = new System.Drawing.Size(111, 20);
+            this.lblUrl2.Size = new System.Drawing.Size(137, 24);
             this.lblUrl2.TabIndex = 44;
             this.lblUrl2.Text = "Imagen 2 (url):";
             // 
@@ -90,10 +91,10 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(405, 22);
-            this.lblCategoria.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblCategoria.Location = new System.Drawing.Point(577, 27);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(80, 20);
+            this.lblCategoria.Size = new System.Drawing.Size(98, 24);
             this.lblCategoria.TabIndex = 43;
             this.lblCategoria.Text = "Categoria:";
             // 
@@ -101,10 +102,10 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(217, 22);
-            this.lblMarca.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblMarca.Location = new System.Drawing.Point(380, 28);
+            this.lblMarca.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(55, 20);
+            this.lblMarca.Size = new System.Drawing.Size(67, 24);
             this.lblMarca.TabIndex = 42;
             this.lblMarca.Text = "Marca:";
             // 
@@ -112,10 +113,10 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(33, 167);
-            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblDescripcion.Location = new System.Drawing.Point(44, 206);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(90, 20);
+            this.lblDescripcion.Size = new System.Drawing.Size(113, 24);
             this.lblDescripcion.TabIndex = 41;
             this.lblDescripcion.Text = "Descripcion:";
             // 
@@ -123,92 +124,105 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(29, 22);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblNombre.Location = new System.Drawing.Point(211, 28);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(68, 20);
+            this.lblNombre.Size = new System.Drawing.Size(83, 24);
             this.lblNombre.TabIndex = 40;
             this.lblNombre.Text = "Nombre:";
             // 
-            // cmxMarca
+            // cbxMarca
             // 
-            this.cmxMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmxMarca.FormattingEnabled = true;
-            this.cmxMarca.Location = new System.Drawing.Point(221, 46);
-            this.cmxMarca.Margin = new System.Windows.Forms.Padding(5);
-            this.cmxMarca.Name = "cmxMarca";
-            this.cmxMarca.Size = new System.Drawing.Size(165, 28);
-            this.cmxMarca.TabIndex = 45;
+            this.cbxMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxMarca.FormattingEnabled = true;
+            this.cbxMarca.Location = new System.Drawing.Point(384, 57);
+            this.cbxMarca.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.cbxMarca.Name = "cbxMarca";
+            this.cbxMarca.Size = new System.Drawing.Size(180, 33);
+            this.cbxMarca.TabIndex = 45;
             // 
-            // textBox5
+            // tbxNombre
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(33, 47);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(165, 27);
-            this.textBox5.TabIndex = 52;
+            this.tbxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxNombre.Location = new System.Drawing.Point(215, 57);
+            this.tbxNombre.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.tbxNombre.Name = "tbxNombre";
+            this.tbxNombre.Size = new System.Drawing.Size(150, 32);
+            this.tbxNombre.TabIndex = 52;
             // 
-            // comboBox1
+            // cbxCat
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(409, 46);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 28);
-            this.comboBox1.TabIndex = 54;
+            this.cbxCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxCat.FormattingEnabled = true;
+            this.cbxCat.Location = new System.Drawing.Point(581, 57);
+            this.cbxCat.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.cbxCat.Name = "cbxCat";
+            this.cbxCat.Size = new System.Drawing.Size(180, 33);
+            this.cbxCat.TabIndex = 54;
             // 
-            // textBox3
+            // tbxDescrip
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(22, 220);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(0, 27);
-            this.textBox3.TabIndex = 55;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(37, 192);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(537, 83);
-            this.textBox4.TabIndex = 56;
+            this.tbxDescrip.Font = new System.Drawing.Font("Trebuchet MS", 49.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxDescrip.Location = new System.Drawing.Point(49, 236);
+            this.tbxDescrip.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.tbxDescrip.Name = "tbxDescrip";
+            this.tbxDescrip.Size = new System.Drawing.Size(715, 104);
+            this.tbxDescrip.TabIndex = 56;
             // 
             // btnModificarGuardar
             // 
             this.btnModificarGuardar.BackColor = System.Drawing.Color.ForestGreen;
             this.btnModificarGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarGuardar.Location = new System.Drawing.Point(492, 283);
+            this.btnModificarGuardar.Location = new System.Drawing.Point(656, 348);
+            this.btnModificarGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificarGuardar.Name = "btnModificarGuardar";
-            this.btnModificarGuardar.Size = new System.Drawing.Size(82, 34);
+            this.btnModificarGuardar.Size = new System.Drawing.Size(109, 42);
             this.btnModificarGuardar.TabIndex = 57;
             this.btnModificarGuardar.Text = "Agregar";
             this.btnModificarGuardar.UseVisualStyleBackColor = false;
+            this.btnModificarGuardar.Click += new System.EventHandler(this.btnModificarGuardar_Click);
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.lblId.Location = new System.Drawing.Point(45, 28);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(34, 24);
+            this.lblId.TabIndex = 58;
+            this.lblId.Text = "ID:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12.75F);
+            this.textBox1.Location = new System.Drawing.Point(48, 57);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 32);
+            this.textBox1.TabIndex = 59;
             // 
             // FormularioAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(601, 340);
-            this.Controls.Add(this.btnModificarGuardar);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(800, 416);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmxMarca);
+            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.btnModificarGuardar);
+            this.Controls.Add(this.tbxDescrip);
+            this.Controls.Add(this.cbxCat);
+            this.Controls.Add(this.tbxNombre);
+            this.Controls.Add(this.tbxUrl2);
+            this.Controls.Add(this.tbxUrl1);
+            this.Controls.Add(this.lblUrl1);
+            this.Controls.Add(this.cbxMarca);
             this.Controls.Add(this.lblUrl2);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormularioAgregar";
             this.Text = "v";
             this.Load += new System.EventHandler(this.FormularioAgregar_Load);
@@ -219,19 +233,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbxUrl2;
+        private System.Windows.Forms.TextBox tbxUrl1;
+        private System.Windows.Forms.Label lblUrl1;
         private System.Windows.Forms.Label lblUrl2;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.ComboBox cmxMarca;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox cbxMarca;
+        private System.Windows.Forms.TextBox tbxNombre;
+        private System.Windows.Forms.ComboBox cbxCat;
+        private System.Windows.Forms.TextBox tbxDescrip;
         private System.Windows.Forms.Button btnModificarGuardar;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

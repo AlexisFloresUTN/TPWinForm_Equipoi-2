@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TrabajoPractico2
 {
-    public partial class FormularioPrincipal : Form
+    public partial class formularioPrincipal : Form
     {
-        public FormularioPrincipal()
+        public formularioPrincipal()
         {
             InitializeComponent();
         }
@@ -64,8 +65,7 @@ namespace TrabajoPractico2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormularioModificar frmAgregar = new FormularioModificar();
-            frmAgregar.ShowDialog();
+            AbrirFormHija(new FormularioModificar());
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -78,25 +78,41 @@ namespace TrabajoPractico2
 
         }
 
-        private void button3_Click_2(object sender, EventArgs e)
+        private void AbrirFormHija(object formhija)
         {
-
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            FormularioAgregar frmAgregar = new FormularioAgregar();
-            frmAgregar.ShowDialog();
+            AbrirFormHija(new FormularioAgregar());
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            FormularioBuscar frmBuscar = new FormularioBuscar();
-            frmBuscar.ShowDialog();
+            AbrirFormHija(new FormularioBuscar());
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
                     }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormularioListar());
+        }
     }
 }

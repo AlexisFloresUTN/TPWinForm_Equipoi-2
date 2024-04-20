@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="Articulo.cs" />
     <Compile Include="Categoria.cs" />
+    <Compile Include="FormularioListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioListar.Designer.cs">
+      <DependentUpon>FormularioListar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioModificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioAgregar.resx">
       <DependentUpon>FormularioAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioListar.resx">
+      <DependentUpon>FormularioListar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioModificar.resx">
       <DependentUpon>FormularioModificar.cs</DependentUpon>
