@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajoPractico2
 {
-    internal class Articulo
+    public class Articulo
     {
         public int Id { get; set; }
         public string CodArt { get; set; }
@@ -15,7 +15,7 @@ namespace TrabajoPractico2
         public int IdMarca { get; set; }
         public int IdCategoria { get; set; }
         public int IdImagen { get; set; }
-        public float Precio { get; set; }
+        public decimal Precio { get; set; }
     }
 }
 

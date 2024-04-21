@@ -15,6 +15,17 @@ namespace TrabajoPractico2
         public FormularioListar()
         {
             InitializeComponent();
+
+        }
+
+        private void FormularioListar_Load(object sender, EventArgs e)
+        {
+            Cargar();
+        }
+        private void Cargar()
+        {
+            NegocioArticulo negocio = new NegocioArticulo();
+            dgvArticulos.DataSource = negocio.Listar();
         }
     }
 }

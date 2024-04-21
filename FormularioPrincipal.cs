@@ -25,8 +25,8 @@ namespace TrabajoPractico2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
+         
+            }
 
         private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -113,6 +113,11 @@ namespace TrabajoPractico2
         private void btnListar_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FormularioListar());
+        }
+
+        private void dgvArticulo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
