@@ -7,3 +7,12 @@ C:\Users\alesi\Desktop\TrabajoPractico2\NegocioTp\bin\Debug\DominioTp.pdb
 C:\Users\alesi\Desktop\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.csproj.Up2Date
 C:\Users\alesi\Desktop\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.dll
 C:\Users\alesi\Desktop\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.pdb
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\bin\Debug\NegocioTp.dll
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\bin\Debug\NegocioTp.pdb
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\bin\Debug\DominioTp.dll
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\bin\Debug\DominioTp.pdb
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.csproj.AssemblyReference.cache
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.csproj.CoreCompileInputs.cache
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.csproj.Up2Date
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.dll
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\NegocioTp\obj\Debug\NegocioTp.pdb

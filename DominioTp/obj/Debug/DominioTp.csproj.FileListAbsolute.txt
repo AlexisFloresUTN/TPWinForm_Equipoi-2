@@ -4,3 +4,9 @@ C:\Users\alesi\Desktop\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.csproj.Ass
 C:\Users\alesi\Desktop\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.csproj.CoreCompileInputs.cache
 C:\Users\alesi\Desktop\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.dll
 C:\Users\alesi\Desktop\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.pdb
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\DominioTp\bin\Debug\DominioTp.dll
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\DominioTp\bin\Debug\DominioTp.pdb
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.csproj.AssemblyReference.cache
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.csproj.CoreCompileInputs.cache
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.dll
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\DominioTp\obj\Debug\DominioTp.pdb
