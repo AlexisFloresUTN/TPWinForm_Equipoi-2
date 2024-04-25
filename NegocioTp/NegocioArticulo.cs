@@ -17,7 +17,7 @@ namespace NegocioTp
 
             try
             {
-                datos.SetearConsulta("SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, Precio FROM ARTICULOS  A, CATEGORIAS C, MARCAS M where C.Id= A.IdCategoria and A.IdMarca = M.Id");
+                datos.SetearConsulta("SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, Precio FROM ARTICULOS A, CATEGORIAS C, MARCAS M where C.Id= A.IdCategoria and A.IdMarca = M.Id");
                 datos.EjecutarLectura();
 
                 while (datos.Lector.Read())
@@ -29,7 +29,7 @@ namespace NegocioTp
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Marca = new Marca();
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
-                    aux.Categoria= new Categoria();
+                    aux.Categoria = new Categoria();
                     aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
                     aux.Precio = (Decimal)datos.Lector["Precio"];
 
@@ -46,6 +46,30 @@ namespace NegocioTp
             {
                 datos.CerrarConexion();
             }
+        }
+
+        public void AgregarNuevoArt(Articulo nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+               datos.SetearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values('"+nuevo.CodArt+"','"+nuevo.Nombre+"','"+nuevo.Descripcion+"',@IdMarca,@IdCategoria,'"+nuevo.Precio+"')");
+               datos.setearParametro("@IdMarca", nuevo.Marca.Id);
+               datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
+               datos.ejecutarAccion();
+                
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+
         }
     }
 }

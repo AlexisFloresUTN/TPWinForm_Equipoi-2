@@ -41,8 +41,10 @@
             this.cbxCat = new System.Windows.Forms.ComboBox();
             this.tbxDescrip = new System.Windows.Forms.TextBox();
             this.btnModificarGuardar = new System.Windows.Forms.Button();
-            this.lblId = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.iblCodArt = new System.Windows.Forms.Label();
+            this.tbxCodArt = new System.Windows.Forms.TextBox();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.tbxPrecio = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tbxUrl2
@@ -80,7 +82,7 @@
             this.lblUrl2.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
             this.lblUrl2.AutoSize = true;
             this.lblUrl2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUrl2.Location = new System.Drawing.Point(45, 168);
+            this.lblUrl2.Location = new System.Drawing.Point(46, 168);
             this.lblUrl2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblUrl2.Name = "lblUrl2";
             this.lblUrl2.Size = new System.Drawing.Size(137, 24);
@@ -91,7 +93,7 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(577, 27);
+            this.lblCategoria.Location = new System.Drawing.Point(594, 28);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(98, 24);
@@ -102,7 +104,7 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(380, 28);
+            this.lblMarca.Location = new System.Drawing.Point(410, 27);
             this.lblMarca.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(67, 24);
@@ -113,7 +115,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(44, 206);
+            this.lblDescripcion.Location = new System.Drawing.Point(44, 276);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(113, 24);
@@ -124,7 +126,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(211, 28);
+            this.lblNombre.Location = new System.Drawing.Point(226, 28);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(83, 24);
@@ -133,40 +135,44 @@
             // 
             // cbxMarca
             // 
+            this.cbxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMarca.FormattingEnabled = true;
-            this.cbxMarca.Location = new System.Drawing.Point(384, 57);
+            this.cbxMarca.Location = new System.Drawing.Point(414, 54);
             this.cbxMarca.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.cbxMarca.Name = "cbxMarca";
-            this.cbxMarca.Size = new System.Drawing.Size(180, 33);
+            this.cbxMarca.Size = new System.Drawing.Size(170, 33);
             this.cbxMarca.TabIndex = 45;
             // 
             // tbxNombre
             // 
             this.tbxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxNombre.Location = new System.Drawing.Point(215, 57);
+            this.tbxNombre.Location = new System.Drawing.Point(230, 55);
             this.tbxNombre.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tbxNombre.Name = "tbxNombre";
-            this.tbxNombre.Size = new System.Drawing.Size(150, 32);
+            this.tbxNombre.Size = new System.Drawing.Size(170, 32);
             this.tbxNombre.TabIndex = 52;
+            this.tbxNombre.TextChanged += new System.EventHandler(this.tbxNombre_TextChanged);
             // 
             // cbxCat
             // 
+            this.cbxCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCat.FormattingEnabled = true;
-            this.cbxCat.Location = new System.Drawing.Point(581, 57);
+            this.cbxCat.Location = new System.Drawing.Point(598, 55);
             this.cbxCat.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.cbxCat.Name = "cbxCat";
-            this.cbxCat.Size = new System.Drawing.Size(180, 33);
+            this.cbxCat.Size = new System.Drawing.Size(170, 33);
             this.cbxCat.TabIndex = 54;
+            this.cbxCat.SelectedIndexChanged += new System.EventHandler(this.cbxCat_SelectedIndexChanged);
             // 
             // tbxDescrip
             // 
-            this.tbxDescrip.Font = new System.Drawing.Font("Trebuchet MS", 49.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxDescrip.Location = new System.Drawing.Point(49, 236);
+            this.tbxDescrip.Font = new System.Drawing.Font("Trebuchet MS", 12.8F);
+            this.tbxDescrip.Location = new System.Drawing.Point(50, 306);
             this.tbxDescrip.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tbxDescrip.Name = "tbxDescrip";
-            this.tbxDescrip.Size = new System.Drawing.Size(715, 104);
+            this.tbxDescrip.Size = new System.Drawing.Size(715, 32);
             this.tbxDescrip.TabIndex = 56;
             // 
             // btnModificarGuardar
@@ -182,23 +188,41 @@
             this.btnModificarGuardar.UseVisualStyleBackColor = false;
             this.btnModificarGuardar.Click += new System.EventHandler(this.btnModificarGuardar_Click);
             // 
-            // lblId
+            // iblCodArt
             // 
-            this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            this.lblId.Location = new System.Drawing.Point(45, 28);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(34, 24);
-            this.lblId.TabIndex = 58;
-            this.lblId.Text = "ID:";
+            this.iblCodArt.AutoSize = true;
+            this.iblCodArt.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.iblCodArt.Location = new System.Drawing.Point(46, 28);
+            this.iblCodArt.Name = "iblCodArt";
+            this.iblCodArt.Size = new System.Drawing.Size(105, 24);
+            this.iblCodArt.TabIndex = 60;
+            this.iblCodArt.Text = "Codigo Art:";
             // 
-            // textBox1
+            // tbxCodArt
             // 
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12.75F);
-            this.textBox1.Location = new System.Drawing.Point(48, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 32);
-            this.textBox1.TabIndex = 59;
+            this.tbxCodArt.Font = new System.Drawing.Font("Trebuchet MS", 12.7F);
+            this.tbxCodArt.Location = new System.Drawing.Point(48, 55);
+            this.tbxCodArt.Name = "tbxCodArt";
+            this.tbxCodArt.Size = new System.Drawing.Size(170, 32);
+            this.tbxCodArt.TabIndex = 61;
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            this.lblPrecio.Location = new System.Drawing.Point(46, 224);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(68, 24);
+            this.lblPrecio.TabIndex = 62;
+            this.lblPrecio.Text = "Precio:";
+            // 
+            // tbxPrecio
+            // 
+            this.tbxPrecio.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPrecio.Location = new System.Drawing.Point(215, 220);
+            this.tbxPrecio.Name = "tbxPrecio";
+            this.tbxPrecio.Size = new System.Drawing.Size(549, 31);
+            this.tbxPrecio.TabIndex = 63;
             // 
             // FormularioAgregar
             // 
@@ -206,8 +230,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 416);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.tbxPrecio);
+            this.Controls.Add(this.lblPrecio);
+            this.Controls.Add(this.tbxCodArt);
+            this.Controls.Add(this.iblCodArt);
             this.Controls.Add(this.btnModificarGuardar);
             this.Controls.Add(this.tbxDescrip);
             this.Controls.Add(this.cbxCat);
@@ -246,7 +272,9 @@
         private System.Windows.Forms.ComboBox cbxCat;
         private System.Windows.Forms.TextBox tbxDescrip;
         private System.Windows.Forms.Button btnModificarGuardar;
-        private System.Windows.Forms.Label lblId;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label iblCodArt;
+        private System.Windows.Forms.TextBox tbxCodArt;
+        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.TextBox tbxPrecio;
     }
 }

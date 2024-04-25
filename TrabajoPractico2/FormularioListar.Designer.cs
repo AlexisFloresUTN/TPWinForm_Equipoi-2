@@ -49,6 +49,7 @@
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.Size = new System.Drawing.Size(800, 416);
             this.dgvArticulos.TabIndex = 1;
+            this.dgvArticulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArticulos_CellContentClick);
             // 
             // FormularioListar
             // 

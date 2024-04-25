@@ -26,8 +26,14 @@ namespace TrabajoPractico2
         }
         private void Cargar()
         {
+            
             NegocioArticulo negocio = new NegocioArticulo();
             dgvArticulos.DataSource = negocio.Listar();
+        }
+
+        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+       
         }
     }
 }

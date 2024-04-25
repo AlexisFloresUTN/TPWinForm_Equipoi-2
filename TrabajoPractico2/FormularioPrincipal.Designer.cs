@@ -76,7 +76,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1226, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1233, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -155,7 +155,7 @@
             // 
             this.cbxMarcas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxMarcas.FormattingEnabled = true;
-            this.cbxMarcas.Location = new System.Drawing.Point(847, 93);
+            this.cbxMarcas.Location = new System.Drawing.Point(854, 93);
             this.cbxMarcas.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMarcas.Name = "cbxMarcas";
             this.cbxMarcas.Size = new System.Drawing.Size(120, 26);
@@ -167,7 +167,7 @@
             this.lblMarcas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMarcas.AutoSize = true;
             this.lblMarcas.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarcas.Location = new System.Drawing.Point(843, 68);
+            this.lblMarcas.Location = new System.Drawing.Point(850, 68);
             this.lblMarcas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMarcas.Name = "lblMarcas";
             this.lblMarcas.Size = new System.Drawing.Size(65, 23);
@@ -178,7 +178,7 @@
             // 
             this.cbxArt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxArt.FormattingEnabled = true;
-            this.cbxArt.Location = new System.Drawing.Point(1095, 93);
+            this.cbxArt.Location = new System.Drawing.Point(1102, 93);
             this.cbxArt.Margin = new System.Windows.Forms.Padding(2);
             this.cbxArt.Name = "cbxArt";
             this.cbxArt.Size = new System.Drawing.Size(120, 26);
@@ -189,7 +189,7 @@
             this.lblArt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblArt.AutoSize = true;
             this.lblArt.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArt.Location = new System.Drawing.Point(1091, 67);
+            this.lblArt.Location = new System.Drawing.Point(1098, 67);
             this.lblArt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblArt.Name = "lblArt";
             this.lblArt.Size = new System.Drawing.Size(81, 23);
@@ -200,7 +200,7 @@
             // 
             this.cbxCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxCat.FormattingEnabled = true;
-            this.cbxCat.Location = new System.Drawing.Point(971, 93);
+            this.cbxCat.Location = new System.Drawing.Point(978, 93);
             this.cbxCat.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCat.Name = "cbxCat";
             this.cbxCat.Size = new System.Drawing.Size(120, 26);
@@ -212,7 +212,7 @@
             this.lblCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCat.AutoSize = true;
             this.lblCat.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCat.Location = new System.Drawing.Point(967, 67);
+            this.lblCat.Location = new System.Drawing.Point(974, 67);
             this.lblCat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCat.Name = "lblCat";
             this.lblCat.Size = new System.Drawing.Size(86, 23);
@@ -223,7 +223,7 @@
             // pcbImagenes
             // 
             this.pcbImagenes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcbImagenes.Location = new System.Drawing.Point(896, 227);
+            this.pcbImagenes.Location = new System.Drawing.Point(886, 227);
             this.pcbImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.pcbImagenes.Name = "pcbImagenes";
             this.pcbImagenes.Size = new System.Drawing.Size(270, 260);
@@ -236,7 +236,7 @@
             this.btnAnterior.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnterior.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
-            this.btnAnterior.Location = new System.Drawing.Point(836, 337);
+            this.btnAnterior.Location = new System.Drawing.Point(826, 337);
             this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(56, 59);
@@ -250,7 +250,7 @@
             this.btnSiguiente.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSiguiente.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.Location = new System.Drawing.Point(1170, 337);
+            this.btnSiguiente.Location = new System.Drawing.Point(1166, 337);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(56, 59);
@@ -289,7 +289,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.Red;
             this.btnEliminar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminar.Location = new System.Drawing.Point(540, 62);
+            this.btnEliminar.Location = new System.Drawing.Point(526, 61);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(105, 57);
@@ -302,7 +302,7 @@
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.Location = new System.Drawing.Point(704, 62);
+            this.btnBuscar.Location = new System.Drawing.Point(687, 61);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(92, 57);
@@ -327,7 +327,7 @@
             // 
             this.panelContenedor.Location = new System.Drawing.Point(25, 137);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(771, 416);
+            this.panelContenedor.Size = new System.Drawing.Size(754, 416);
             this.panelContenedor.TabIndex = 19;
             // 
             // btnListar
@@ -349,7 +349,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1226, 591);
+            this.ClientSize = new System.Drawing.Size(1233, 591);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.btnBuscar);
