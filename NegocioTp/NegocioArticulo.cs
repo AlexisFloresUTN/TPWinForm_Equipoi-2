@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using DominioTp;
 
 namespace NegocioTp
@@ -48,17 +49,17 @@ namespace NegocioTp
             }
         }
 
-        public void AgregarNuevoArt(Articulo nuevo)
+        public void AgregarNuevoArt(Articulo nuevo, Imagen NuevaI)
         {
             AccesoDatos datos = new AccesoDatos();
+            
 
             try
             {
-               datos.SetearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values('"+nuevo.CodArt+"','"+nuevo.Nombre+"','"+nuevo.Descripcion+"',@IdMarca,@IdCategoria,'"+nuevo.Precio+"')");
-               datos.setearParametro("@IdMarca", nuevo.Marca.Id);
-               datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
-               datos.ejecutarAccion();
-                
+                datos.SetearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) OUTPUT INSERTED.Id values('" + nuevo.CodArt+"','"+nuevo.Nombre+"','"+nuevo.Descripcion+"',@IdMarca,@IdCategoria,'"+nuevo.Precio+ "') ");
+                datos.setearParametro("@IdMarca", nuevo.Marca.Id);
+                datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
+                NuevaI.IdArticulo = datos.RetornarId();
 
             }
             catch (Exception ex)

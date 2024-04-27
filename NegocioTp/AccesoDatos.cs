@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace NegocioTp
 {
@@ -54,13 +55,29 @@ namespace NegocioTp
             {
                 conexion.Open();
                 comando.ExecuteNonQuery();
+
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
+        public int RetornarId()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                int idGenerado = (int)comando.ExecuteScalar();
+                return idGenerado;
+                   
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { conexion.Close(); }
+        }
         public void CerrarConexion()
         {
             if (lector != null)
