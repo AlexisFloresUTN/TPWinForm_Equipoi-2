@@ -41,5 +41,26 @@ namespace NegocioTp
                 datos.CerrarConexion();
             }
         }
+        public void AgregarNuevaMarca(Marca nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.SetearConsulta("insert into MARCAS (Descripcion)values('"+nuevo.Descripcion +"')");
+                datos.ejecutarAccion();
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+
+        }
     }
 }

@@ -39,3 +39,5 @@ C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioListarM.resources
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioListarC.resources
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioListarI.resources
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioAgregarMarca.resources
+C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioAgregarCategoria.resources

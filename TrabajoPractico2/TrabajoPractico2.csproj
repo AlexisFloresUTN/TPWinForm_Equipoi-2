@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioAgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAgregarCategoria.Designer.cs">
+      <DependentUpon>FormularioAgregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioAgregarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAgregarMarca.Designer.cs">
+      <DependentUpon>FormularioAgregarMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioListar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioAgregar.resx">
       <DependentUpon>FormularioAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioAgregarCategoria.resx">
+      <DependentUpon>FormularioAgregarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioAgregarMarca.resx">
+      <DependentUpon>FormularioAgregarMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioListar.resx">
       <DependentUpon>FormularioListar.cs</DependentUpon>

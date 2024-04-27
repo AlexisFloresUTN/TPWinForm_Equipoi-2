@@ -58,22 +58,21 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnListarA = new System.Windows.Forms.Button();
             this.gbxAgregar = new System.Windows.Forms.GroupBox();
-            this.gbxListar = new System.Windows.Forms.GroupBox();
-            this.gbxModificar = new System.Windows.Forms.GroupBox();
-            this.gbxEliminar = new System.Windows.Forms.GroupBox();
-            this.gbxBuscar = new System.Windows.Forms.GroupBox();
             this.btnAgregarM = new System.Windows.Forms.Button();
             this.btnAgregarC = new System.Windows.Forms.Button();
-            this.btnAgregarI = new System.Windows.Forms.Button();
-            this.btnListarM = new System.Windows.Forms.Button();
-            this.btnListarC = new System.Windows.Forms.Button();
+            this.gbxListar = new System.Windows.Forms.GroupBox();
             this.btnListarI = new System.Windows.Forms.Button();
-            this.btnModificarM = new System.Windows.Forms.Button();
+            this.btnListarC = new System.Windows.Forms.Button();
+            this.btnListarM = new System.Windows.Forms.Button();
+            this.gbxModificar = new System.Windows.Forms.GroupBox();
             this.btnModificarC = new System.Windows.Forms.Button();
             this.btnModificarI = new System.Windows.Forms.Button();
-            this.btnEliminarM = new System.Windows.Forms.Button();
-            this.btnEliminarC = new System.Windows.Forms.Button();
+            this.btnModificarM = new System.Windows.Forms.Button();
+            this.gbxEliminar = new System.Windows.Forms.GroupBox();
             this.btnEliminarI = new System.Windows.Forms.Button();
+            this.btnEliminarC = new System.Windows.Forms.Button();
+            this.btnEliminarM = new System.Windows.Forms.Button();
+            this.gbxBuscar = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagenes)).BeginInit();
             this.gbxAgregar.SuspendLayout();
             this.gbxListar.SuspendLayout();
@@ -158,7 +157,7 @@
             this.cbxMarcas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxMarcas.FormattingEnabled = true;
             this.cbxMarcas.Location = new System.Drawing.Point(841, 93);
-            this.cbxMarcas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxMarcas.Margin = new System.Windows.Forms.Padding(2);
             this.cbxMarcas.Name = "cbxMarcas";
             this.cbxMarcas.Size = new System.Drawing.Size(120, 26);
             this.cbxMarcas.TabIndex = 6;
@@ -181,7 +180,7 @@
             this.cbxArt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxArt.FormattingEnabled = true;
             this.cbxArt.Location = new System.Drawing.Point(1089, 93);
-            this.cbxArt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxArt.Margin = new System.Windows.Forms.Padding(2);
             this.cbxArt.Name = "cbxArt";
             this.cbxArt.Size = new System.Drawing.Size(120, 26);
             this.cbxArt.TabIndex = 8;
@@ -203,7 +202,7 @@
             this.cbxCat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxCat.FormattingEnabled = true;
             this.cbxCat.Location = new System.Drawing.Point(965, 93);
-            this.cbxCat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxCat.Margin = new System.Windows.Forms.Padding(2);
             this.cbxCat.Name = "cbxCat";
             this.cbxCat.Size = new System.Drawing.Size(120, 26);
             this.cbxCat.TabIndex = 10;
@@ -226,7 +225,7 @@
             // 
             this.pcbImagenes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pcbImagenes.Location = new System.Drawing.Point(873, 227);
-            this.pcbImagenes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.pcbImagenes.Name = "pcbImagenes";
             this.pcbImagenes.Size = new System.Drawing.Size(270, 260);
             this.pcbImagenes.TabIndex = 12;
@@ -239,7 +238,7 @@
             this.btnAnterior.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnterior.Image = ((System.Drawing.Image)(resources.GetObject("btnAnterior.Image")));
             this.btnAnterior.Location = new System.Drawing.Point(813, 337);
-            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(56, 59);
             this.btnAnterior.TabIndex = 13;
@@ -253,7 +252,7 @@
             this.btnSiguiente.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
             this.btnSiguiente.Location = new System.Drawing.Point(1153, 337);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(56, 59);
             this.btnSiguiente.TabIndex = 14;
@@ -265,7 +264,7 @@
             this.btnModificarA.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnModificarA.Location = new System.Drawing.Point(5, 20);
-            this.btnModificarA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificarA.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificarA.Name = "btnModificarA";
             this.btnModificarA.Size = new System.Drawing.Size(143, 38);
             this.btnModificarA.TabIndex = 15;
@@ -277,8 +276,8 @@
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAgregar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(5, 21);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregar.Location = new System.Drawing.Point(5, 22);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(143, 38);
             this.btnAgregar.TabIndex = 16;
@@ -292,7 +291,7 @@
             this.btnEliminarA.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEliminarA.Location = new System.Drawing.Point(5, 20);
-            this.btnEliminarA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarA.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarA.Name = "btnEliminarA";
             this.btnEliminarA.Size = new System.Drawing.Size(143, 38);
             this.btnEliminarA.TabIndex = 17;
@@ -305,9 +304,9 @@
             this.btnBuscar.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.Location = new System.Drawing.Point(5, 24);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(143, 35);
+            this.btnBuscar.Size = new System.Drawing.Size(117, 35);
             this.btnBuscar.TabIndex = 18;
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -327,10 +326,11 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Location = new System.Drawing.Point(0, 218);
+            this.panelContenedor.Location = new System.Drawing.Point(12, 218);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(789, 416);
+            this.panelContenedor.Size = new System.Drawing.Size(763, 407);
             this.panelContenedor.TabIndex = 19;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // btnListarA
             // 
@@ -348,17 +348,40 @@
             // gbxAgregar
             // 
             this.gbxAgregar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gbxAgregar.Controls.Add(this.btnAgregarI);
             this.gbxAgregar.Controls.Add(this.btnAgregarM);
             this.gbxAgregar.Controls.Add(this.btnAgregarC);
             this.gbxAgregar.Controls.Add(this.btnAgregar);
             this.gbxAgregar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxAgregar.Location = new System.Drawing.Point(0, 12);
+            this.gbxAgregar.Location = new System.Drawing.Point(12, 12);
             this.gbxAgregar.Name = "gbxAgregar";
             this.gbxAgregar.Size = new System.Drawing.Size(153, 200);
             this.gbxAgregar.TabIndex = 21;
             this.gbxAgregar.TabStop = false;
             this.gbxAgregar.Text = "Agregar";
+            // 
+            // btnAgregarM
+            // 
+            this.btnAgregarM.BackColor = System.Drawing.Color.Green;
+            this.btnAgregarM.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarM.Location = new System.Drawing.Point(5, 65);
+            this.btnAgregarM.Name = "btnAgregarM";
+            this.btnAgregarM.Size = new System.Drawing.Size(142, 38);
+            this.btnAgregarM.TabIndex = 17;
+            this.btnAgregarM.Text = "Marcas";
+            this.btnAgregarM.UseVisualStyleBackColor = false;
+            this.btnAgregarM.Click += new System.EventHandler(this.btnAgregarM_Click);
+            // 
+            // btnAgregarC
+            // 
+            this.btnAgregarC.BackColor = System.Drawing.Color.Green;
+            this.btnAgregarC.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarC.Location = new System.Drawing.Point(5, 109);
+            this.btnAgregarC.Name = "btnAgregarC";
+            this.btnAgregarC.Size = new System.Drawing.Size(143, 38);
+            this.btnAgregarC.TabIndex = 18;
+            this.btnAgregarC.Text = "Categorias";
+            this.btnAgregarC.UseVisualStyleBackColor = false;
+            this.btnAgregarC.Click += new System.EventHandler(this.btnAgregarC_Click);
             // 
             // gbxListar
             // 
@@ -368,113 +391,12 @@
             this.gbxListar.Controls.Add(this.btnListarM);
             this.gbxListar.Controls.Add(this.btnListarA);
             this.gbxListar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxListar.Location = new System.Drawing.Point(159, 12);
+            this.gbxListar.Location = new System.Drawing.Point(171, 12);
             this.gbxListar.Name = "gbxListar";
             this.gbxListar.Size = new System.Drawing.Size(153, 200);
             this.gbxListar.TabIndex = 22;
             this.gbxListar.TabStop = false;
             this.gbxListar.Text = "Listar";
-            // 
-            // gbxModificar
-            // 
-            this.gbxModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gbxModificar.Controls.Add(this.btnModificarC);
-            this.gbxModificar.Controls.Add(this.btnModificarI);
-            this.gbxModificar.Controls.Add(this.btnModificarM);
-            this.gbxModificar.Controls.Add(this.btnModificarA);
-            this.gbxModificar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxModificar.Location = new System.Drawing.Point(318, 12);
-            this.gbxModificar.Name = "gbxModificar";
-            this.gbxModificar.Size = new System.Drawing.Size(153, 200);
-            this.gbxModificar.TabIndex = 23;
-            this.gbxModificar.TabStop = false;
-            this.gbxModificar.Text = "Modificar";
-            // 
-            // gbxEliminar
-            // 
-            this.gbxEliminar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gbxEliminar.Controls.Add(this.btnEliminarI);
-            this.gbxEliminar.Controls.Add(this.btnEliminarC);
-            this.gbxEliminar.Controls.Add(this.btnEliminarM);
-            this.gbxEliminar.Controls.Add(this.btnEliminarA);
-            this.gbxEliminar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxEliminar.Location = new System.Drawing.Point(477, 12);
-            this.gbxEliminar.Name = "gbxEliminar";
-            this.gbxEliminar.Size = new System.Drawing.Size(153, 200);
-            this.gbxEliminar.TabIndex = 0;
-            this.gbxEliminar.TabStop = false;
-            this.gbxEliminar.Text = "Eliminar";
-            // 
-            // gbxBuscar
-            // 
-            this.gbxBuscar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gbxBuscar.Controls.Add(this.btnBuscar);
-            this.gbxBuscar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxBuscar.Location = new System.Drawing.Point(636, 12);
-            this.gbxBuscar.Name = "gbxBuscar";
-            this.gbxBuscar.Size = new System.Drawing.Size(153, 200);
-            this.gbxBuscar.TabIndex = 24;
-            this.gbxBuscar.TabStop = false;
-            this.gbxBuscar.Text = "Buscar";
-            // 
-            // btnAgregarM
-            // 
-            this.btnAgregarM.BackColor = System.Drawing.Color.Green;
-            this.btnAgregarM.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarM.Location = new System.Drawing.Point(5, 64);
-            this.btnAgregarM.Name = "btnAgregarM";
-            this.btnAgregarM.Size = new System.Drawing.Size(142, 38);
-            this.btnAgregarM.TabIndex = 17;
-            this.btnAgregarM.Text = "Marcas";
-            this.btnAgregarM.UseVisualStyleBackColor = false;
-            // 
-            // btnAgregarC
-            // 
-            this.btnAgregarC.BackColor = System.Drawing.Color.Green;
-            this.btnAgregarC.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarC.Location = new System.Drawing.Point(5, 108);
-            this.btnAgregarC.Name = "btnAgregarC";
-            this.btnAgregarC.Size = new System.Drawing.Size(143, 38);
-            this.btnAgregarC.TabIndex = 18;
-            this.btnAgregarC.Text = "Categorias";
-            this.btnAgregarC.UseVisualStyleBackColor = false;
-            // 
-            // btnAgregarI
-            // 
-            this.btnAgregarI.BackColor = System.Drawing.Color.Green;
-            this.btnAgregarI.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarI.Location = new System.Drawing.Point(5, 152);
-            this.btnAgregarI.Name = "btnAgregarI";
-            this.btnAgregarI.Size = new System.Drawing.Size(143, 38);
-            this.btnAgregarI.TabIndex = 19;
-            this.btnAgregarI.Text = "Imagenes";
-            this.btnAgregarI.UseVisualStyleBackColor = false;
-            // 
-            // btnListarM
-            // 
-            this.btnListarM.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnListarM.Font = new System.Drawing.Font("Trebuchet MS", 10.9F);
-            this.btnListarM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnListarM.Location = new System.Drawing.Point(6, 64);
-            this.btnListarM.Name = "btnListarM";
-            this.btnListarM.Size = new System.Drawing.Size(141, 38);
-            this.btnListarM.TabIndex = 21;
-            this.btnListarM.Text = "Marcas";
-            this.btnListarM.UseVisualStyleBackColor = false;
-            this.btnListarM.Click += new System.EventHandler(this.btnListarM_Click);
-            // 
-            // btnListarC
-            // 
-            this.btnListarC.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnListarC.Font = new System.Drawing.Font("Trebuchet MS", 10.9F);
-            this.btnListarC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnListarC.Location = new System.Drawing.Point(6, 108);
-            this.btnListarC.Name = "btnListarC";
-            this.btnListarC.Size = new System.Drawing.Size(141, 38);
-            this.btnListarC.TabIndex = 22;
-            this.btnListarC.Text = "Categorias";
-            this.btnListarC.UseVisualStyleBackColor = false;
-            this.btnListarC.Click += new System.EventHandler(this.btnListarC_Click);
             // 
             // btnListarI
             // 
@@ -489,18 +411,46 @@
             this.btnListarI.UseVisualStyleBackColor = false;
             this.btnListarI.Click += new System.EventHandler(this.button6_Click);
             // 
-            // btnModificarM
+            // btnListarC
             // 
-            this.btnModificarM.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnModificarM.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModificarM.Location = new System.Drawing.Point(5, 62);
-            this.btnModificarM.Margin = new System.Windows.Forms.Padding(2);
-            this.btnModificarM.Name = "btnModificarM";
-            this.btnModificarM.Size = new System.Drawing.Size(143, 38);
-            this.btnModificarM.TabIndex = 16;
-            this.btnModificarM.Text = "Marcas";
-            this.btnModificarM.UseVisualStyleBackColor = false;
+            this.btnListarC.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnListarC.Font = new System.Drawing.Font("Trebuchet MS", 10.9F);
+            this.btnListarC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnListarC.Location = new System.Drawing.Point(6, 108);
+            this.btnListarC.Name = "btnListarC";
+            this.btnListarC.Size = new System.Drawing.Size(141, 38);
+            this.btnListarC.TabIndex = 22;
+            this.btnListarC.Text = "Categorias";
+            this.btnListarC.UseVisualStyleBackColor = false;
+            this.btnListarC.Click += new System.EventHandler(this.btnListarC_Click);
+            // 
+            // btnListarM
+            // 
+            this.btnListarM.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnListarM.Font = new System.Drawing.Font("Trebuchet MS", 10.9F);
+            this.btnListarM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnListarM.Location = new System.Drawing.Point(6, 64);
+            this.btnListarM.Name = "btnListarM";
+            this.btnListarM.Size = new System.Drawing.Size(141, 38);
+            this.btnListarM.TabIndex = 21;
+            this.btnListarM.Text = "Marcas";
+            this.btnListarM.UseVisualStyleBackColor = false;
+            this.btnListarM.Click += new System.EventHandler(this.btnListarM_Click);
+            // 
+            // gbxModificar
+            // 
+            this.gbxModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gbxModificar.Controls.Add(this.btnModificarC);
+            this.gbxModificar.Controls.Add(this.btnModificarI);
+            this.gbxModificar.Controls.Add(this.btnModificarM);
+            this.gbxModificar.Controls.Add(this.btnModificarA);
+            this.gbxModificar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxModificar.Location = new System.Drawing.Point(330, 12);
+            this.gbxModificar.Name = "gbxModificar";
+            this.gbxModificar.Size = new System.Drawing.Size(153, 200);
+            this.gbxModificar.TabIndex = 23;
+            this.gbxModificar.TabStop = false;
+            this.gbxModificar.Text = "Modificar";
             // 
             // btnModificarC
             // 
@@ -528,18 +478,46 @@
             this.btnModificarI.Text = "Imagenes";
             this.btnModificarI.UseVisualStyleBackColor = false;
             // 
-            // btnEliminarM
+            // btnModificarM
             // 
-            this.btnEliminarM.BackColor = System.Drawing.Color.Red;
-            this.btnEliminarM.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminarM.Location = new System.Drawing.Point(5, 62);
-            this.btnEliminarM.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminarM.Name = "btnEliminarM";
-            this.btnEliminarM.Size = new System.Drawing.Size(143, 38);
-            this.btnEliminarM.TabIndex = 18;
-            this.btnEliminarM.Text = "Marcas";
-            this.btnEliminarM.UseVisualStyleBackColor = false;
+            this.btnModificarM.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnModificarM.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnModificarM.Location = new System.Drawing.Point(5, 62);
+            this.btnModificarM.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificarM.Name = "btnModificarM";
+            this.btnModificarM.Size = new System.Drawing.Size(143, 38);
+            this.btnModificarM.TabIndex = 16;
+            this.btnModificarM.Text = "Marcas";
+            this.btnModificarM.UseVisualStyleBackColor = false;
+            // 
+            // gbxEliminar
+            // 
+            this.gbxEliminar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gbxEliminar.Controls.Add(this.btnEliminarI);
+            this.gbxEliminar.Controls.Add(this.btnEliminarC);
+            this.gbxEliminar.Controls.Add(this.btnEliminarM);
+            this.gbxEliminar.Controls.Add(this.btnEliminarA);
+            this.gbxEliminar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxEliminar.Location = new System.Drawing.Point(489, 12);
+            this.gbxEliminar.Name = "gbxEliminar";
+            this.gbxEliminar.Size = new System.Drawing.Size(153, 200);
+            this.gbxEliminar.TabIndex = 0;
+            this.gbxEliminar.TabStop = false;
+            this.gbxEliminar.Text = "Eliminar";
+            // 
+            // btnEliminarI
+            // 
+            this.btnEliminarI.BackColor = System.Drawing.Color.Red;
+            this.btnEliminarI.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminarI.Location = new System.Drawing.Point(5, 152);
+            this.btnEliminarI.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarI.Name = "btnEliminarI";
+            this.btnEliminarI.Size = new System.Drawing.Size(143, 38);
+            this.btnEliminarI.TabIndex = 18;
+            this.btnEliminarI.Text = "Imagens";
+            this.btnEliminarI.UseVisualStyleBackColor = false;
             // 
             // btnEliminarC
             // 
@@ -554,18 +532,30 @@
             this.btnEliminarC.Text = "Categorias";
             this.btnEliminarC.UseVisualStyleBackColor = false;
             // 
-            // btnEliminarI
+            // btnEliminarM
             // 
-            this.btnEliminarI.BackColor = System.Drawing.Color.Red;
-            this.btnEliminarI.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarI.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminarI.Location = new System.Drawing.Point(5, 152);
-            this.btnEliminarI.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminarI.Name = "btnEliminarI";
-            this.btnEliminarI.Size = new System.Drawing.Size(143, 38);
-            this.btnEliminarI.TabIndex = 18;
-            this.btnEliminarI.Text = "Imagens";
-            this.btnEliminarI.UseVisualStyleBackColor = false;
+            this.btnEliminarM.BackColor = System.Drawing.Color.Red;
+            this.btnEliminarM.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminarM.Location = new System.Drawing.Point(5, 62);
+            this.btnEliminarM.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarM.Name = "btnEliminarM";
+            this.btnEliminarM.Size = new System.Drawing.Size(143, 38);
+            this.btnEliminarM.TabIndex = 18;
+            this.btnEliminarM.Text = "Marcas";
+            this.btnEliminarM.UseVisualStyleBackColor = false;
+            // 
+            // gbxBuscar
+            // 
+            this.gbxBuscar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gbxBuscar.Controls.Add(this.btnBuscar);
+            this.gbxBuscar.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxBuscar.Location = new System.Drawing.Point(648, 12);
+            this.gbxBuscar.Name = "gbxBuscar";
+            this.gbxBuscar.Size = new System.Drawing.Size(127, 200);
+            this.gbxBuscar.TabIndex = 24;
+            this.gbxBuscar.TabStop = false;
+            this.gbxBuscar.Text = "Buscar";
             // 
             // formularioPrincipal
             // 
@@ -641,7 +631,6 @@
         private System.Windows.Forms.GroupBox gbxBuscar;
         private System.Windows.Forms.Button btnAgregarC;
         private System.Windows.Forms.Button btnAgregarM;
-        private System.Windows.Forms.Button btnAgregarI;
         private System.Windows.Forms.Button btnListarI;
         private System.Windows.Forms.Button btnListarC;
         private System.Windows.Forms.Button btnListarM;

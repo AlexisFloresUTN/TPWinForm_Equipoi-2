@@ -144,5 +144,25 @@ namespace TrabajoPractico2
         {
             AbrirFormHija(new FormularioListarC());
         }
+
+        private void btnAgregarI_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarM_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormularioAgregarMarca());
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAgregarC_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormularioAgregarCategoria());
+        }
     }
 }
