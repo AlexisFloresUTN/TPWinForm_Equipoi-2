@@ -124,5 +124,25 @@ namespace TrabajoPractico2
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormularioListarI());
+        }
+
+        private void btnListarM_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormularioListarM());
+        }
+
+        private void btnListarC_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormularioListarC());
+        }
     }
 }

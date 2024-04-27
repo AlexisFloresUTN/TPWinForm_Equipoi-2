@@ -120,5 +120,10 @@ namespace TrabajoPractico2
         {
 
         }
+
+        private void lblUrl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -25,9 +25,12 @@ namespace NegocioTp
                         Imagen aux = new Imagen();
                         aux.Id = (int)datos.Lector["Id"];
                         aux.IdArticulo = (int)datos.Lector["IdArticulo"];
-                        aux.UrlImagen = (string)datos.Lector["UrlImagen"];
 
-                        lista.Add(aux);
+                    if (!(datos.Lector["ImagenUrl"] is DBNull))
+                    { aux.UrlImagen = (string)datos.Lector["ImagenUrl"]; }
+                    
+                        
+                      lista.Add(aux);
                     }
                     return lista;
                 }

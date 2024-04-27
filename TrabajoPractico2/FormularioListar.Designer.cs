@@ -43,7 +43,7 @@
             // dgvArticulos
             // 
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArticulos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArticulos.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvArticulos.Location = new System.Drawing.Point(0, 0);
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;

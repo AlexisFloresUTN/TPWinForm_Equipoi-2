@@ -50,7 +50,7 @@
             // tbxUrl1
             // 
             this.tbxUrl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxUrl1.Location = new System.Drawing.Point(177, 130);
+            this.tbxUrl1.Location = new System.Drawing.Point(177, 134);
             this.tbxUrl1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tbxUrl1.Name = "tbxUrl1";
             this.tbxUrl1.Size = new System.Drawing.Size(407, 32);
@@ -66,9 +66,10 @@
             this.lblUrl1.Location = new System.Drawing.Point(46, 138);
             this.lblUrl1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblUrl1.Name = "lblUrl1";
-            this.lblUrl1.Size = new System.Drawing.Size(137, 24);
+            this.lblUrl1.Size = new System.Drawing.Size(131, 24);
             this.lblUrl1.TabIndex = 47;
-            this.lblUrl1.Text = "Imagen 1 (url):";
+            this.lblUrl1.Text = "Imagen 1(url):";
+            this.lblUrl1.Click += new System.EventHandler(this.lblUrl1_Click);
             // 
             // lblCategoria
             // 

@@ -53,6 +53,18 @@
     <Compile Include="FormularioListar.Designer.cs">
       <DependentUpon>FormularioListar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioListarC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioListarC.Designer.cs">
+      <DependentUpon>FormularioListarC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioListarI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioListarI.Designer.cs">
+      <DependentUpon>FormularioListarI.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioModificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     <Compile Include="FormularioBuscar.Designer.cs">
       <DependentUpon>FormularioBuscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioListarM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioListarM.Designer.cs">
+      <DependentUpon>FormularioListarM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioAgregar.resx">
@@ -84,6 +102,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioListar.resx">
       <DependentUpon>FormularioListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioListarC.resx">
+      <DependentUpon>FormularioListarC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioListarI.resx">
+      <DependentUpon>FormularioListarI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioModificar.resx">
       <DependentUpon>FormularioModificar.cs</DependentUpon>
@@ -93,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioBuscar.resx">
       <DependentUpon>FormularioBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioListarM.resx">
+      <DependentUpon>FormularioListarM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
