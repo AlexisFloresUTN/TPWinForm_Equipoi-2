@@ -62,5 +62,19 @@ namespace NegocioTp
             }
 
         }
+        public void EliminarMarca(int idMarca)
+        {
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
+                datos.SetearConsulta("delete from MARCAS where Id = @id");
+                datos.setearParametro("@id", idMarca);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

@@ -63,21 +63,6 @@ namespace TrabajoPractico2
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new FormularioModificar());
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void AbrirFormHija(object formhija)
         {
             if (this.panelContenedor.Controls.Count > 0)

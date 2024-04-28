@@ -27,7 +27,6 @@ C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.csproj.AssemblyReference.cache
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioAgregar.resources
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioListar.resources
-C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioModificar.resources
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.formularioPrincipal.resources
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.FormularioBuscar.resources
 C:\Users\alesi\Desktop\trabajopracticoRespaldo\TrabajoPractico2\TrabajoPractico2\obj\Debug\TrabajoPractico2.Properties.Resources.resources

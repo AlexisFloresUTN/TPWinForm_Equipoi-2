@@ -61,5 +61,19 @@ namespace NegocioTp
             }
 
         }
+        public void EliminarCategoria(int idcategoria)
+        {
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
+                datos.SetearConsulta("delete from CATEGORIAS where Id = @id");
+                datos.setearParametro("@id", idcategoria);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

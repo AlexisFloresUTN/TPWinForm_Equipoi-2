@@ -38,12 +38,13 @@
             this.tbxNombre = new System.Windows.Forms.TextBox();
             this.cbxCat = new System.Windows.Forms.ComboBox();
             this.tbxDescrip = new System.Windows.Forms.TextBox();
-            this.btnModificarGuardar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.iblCodArt = new System.Windows.Forms.Label();
             this.tbxCodArt = new System.Windows.Forms.TextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.tbxPrecio = new System.Windows.Forms.TextBox();
             this.pcbArticulos = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbArticulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             this.tbxUrl1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tbxUrl1.Name = "tbxUrl1";
             this.tbxUrl1.Size = new System.Drawing.Size(407, 32);
-            this.tbxUrl1.TabIndex = 48;
+            this.tbxUrl1.TabIndex = 2;
             this.tbxUrl1.TextChanged += new System.EventHandler(this.tbxUrl1_TextChanged);
             this.tbxUrl1.Leave += new System.EventHandler(this.tbxUrl1_Leave);
             // 
@@ -125,6 +126,7 @@
             this.cbxMarca.Name = "cbxMarca";
             this.cbxMarca.Size = new System.Drawing.Size(170, 33);
             this.cbxMarca.TabIndex = 45;
+            this.cbxMarca.SelectedIndexChanged += new System.EventHandler(this.cbxMarca_SelectedIndexChanged);
             // 
             // tbxNombre
             // 
@@ -133,7 +135,7 @@
             this.tbxNombre.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tbxNombre.Name = "tbxNombre";
             this.tbxNombre.Size = new System.Drawing.Size(170, 32);
-            this.tbxNombre.TabIndex = 52;
+            this.tbxNombre.TabIndex = 1;
             this.tbxNombre.TextChanged += new System.EventHandler(this.tbxNombre_TextChanged);
             // 
             // cbxCat
@@ -155,20 +157,20 @@
             this.tbxDescrip.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tbxDescrip.Name = "tbxDescrip";
             this.tbxDescrip.Size = new System.Drawing.Size(407, 32);
-            this.tbxDescrip.TabIndex = 56;
+            this.tbxDescrip.TabIndex = 3;
             // 
-            // btnModificarGuardar
+            // btnAgregar
             // 
-            this.btnModificarGuardar.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnModificarGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarGuardar.Location = new System.Drawing.Point(845, 346);
-            this.btnModificarGuardar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnModificarGuardar.Name = "btnModificarGuardar";
-            this.btnModificarGuardar.Size = new System.Drawing.Size(109, 42);
-            this.btnModificarGuardar.TabIndex = 57;
-            this.btnModificarGuardar.Text = "Agregar";
-            this.btnModificarGuardar.UseVisualStyleBackColor = false;
-            this.btnModificarGuardar.Click += new System.EventHandler(this.btnModificarGuardar_Click);
+            this.btnAgregar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(845, 346);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(109, 42);
+            this.btnAgregar.TabIndex = 5;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnModificarGuardar_Click);
             // 
             // iblCodArt
             // 
@@ -186,7 +188,7 @@
             this.tbxCodArt.Location = new System.Drawing.Point(48, 55);
             this.tbxCodArt.Name = "tbxCodArt";
             this.tbxCodArt.Size = new System.Drawing.Size(170, 32);
-            this.tbxCodArt.TabIndex = 61;
+            this.tbxCodArt.TabIndex = 0;
             // 
             // lblPrecio
             // 
@@ -204,7 +206,7 @@
             this.tbxPrecio.Location = new System.Drawing.Point(177, 282);
             this.tbxPrecio.Name = "tbxPrecio";
             this.tbxPrecio.Size = new System.Drawing.Size(407, 31);
-            this.tbxPrecio.TabIndex = 63;
+            this.tbxPrecio.TabIndex = 4;
             // 
             // pcbArticulos
             // 
@@ -216,6 +218,19 @@
             this.pcbArticulos.TabIndex = 64;
             this.pcbArticulos.TabStop = false;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(728, 346);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(109, 42);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // FormularioAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,12 +238,13 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(967, 416);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pcbArticulos);
             this.Controls.Add(this.tbxPrecio);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.tbxCodArt);
             this.Controls.Add(this.iblCodArt);
-            this.Controls.Add(this.btnModificarGuardar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.tbxDescrip);
             this.Controls.Add(this.cbxCat);
             this.Controls.Add(this.tbxNombre);
@@ -242,7 +258,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormularioAgregar";
-            this.Text = "v";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.FormularioAgregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbArticulos)).EndInit();
             this.ResumeLayout(false);
@@ -261,11 +277,12 @@
         private System.Windows.Forms.TextBox tbxNombre;
         private System.Windows.Forms.ComboBox cbxCat;
         private System.Windows.Forms.TextBox tbxDescrip;
-        private System.Windows.Forms.Button btnModificarGuardar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label iblCodArt;
         private System.Windows.Forms.TextBox tbxCodArt;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.TextBox tbxPrecio;
         private System.Windows.Forms.PictureBox pcbArticulos;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

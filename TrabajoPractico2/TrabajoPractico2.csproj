@@ -77,12 +77,6 @@
     <Compile Include="FormularioListarI.Designer.cs">
       <DependentUpon>FormularioListarI.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioModificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormularioModificar.Designer.cs">
-      <DependentUpon>FormularioModificar.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormularioPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,9 +120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioListarI.resx">
       <DependentUpon>FormularioListarI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormularioModificar.resx">
-      <DependentUpon>FormularioModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioPrincipal.resx">
       <DependentUpon>FormularioPrincipal.cs</DependentUpon>

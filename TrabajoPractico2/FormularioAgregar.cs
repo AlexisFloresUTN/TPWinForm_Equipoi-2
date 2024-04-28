@@ -18,7 +18,13 @@ namespace TrabajoPractico2
         {
             InitializeComponent();
         }
-
+        private Articulo articulo = null;
+        public FormularioAgregar(Articulo ArticuloM)
+        {
+            InitializeComponent();
+            this.articulo = ArticuloM;
+            Text = "Modificar Articulo";
+        }
         private void txtAgregarNombre_TextChanged(object sender, EventArgs e)
         {
 
@@ -26,12 +32,34 @@ namespace TrabajoPractico2
 
         private void FormularioAgregar_Load(object sender, EventArgs e)
         {
+            Imagen aux = new Imagen();
+            NegocioImagen negocioImagen = new NegocioImagen();
             NegocioMarca negocioMarca = new NegocioMarca();
             NegocioCategoria negocioCategoria = new NegocioCategoria();
+            cbxMarca.DataSource = negocioMarca.ListarMarcas();
+            cbxMarca.ValueMember = "Id";
+            cbxMarca.DisplayMember = "Descripcion";
+            cbxCat.DataSource = negocioCategoria.ListarCategorias();
+            cbxCat.ValueMember = "Id";
+            cbxCat.DisplayMember = "Descripcion";
+            
+            
             try
             {
-                cbxMarca.DataSource = negocioMarca.ListarMarcas();
-                cbxCat.DataSource = negocioCategoria.ListarCategorias();
+                if (articulo != null)
+                {
+                    int ID = articulo.Id;
+                    tbxCodArt.Text = articulo.CodArt.ToString();
+                    tbxNombre.Text = articulo.Nombre;
+                    tbxDescrip.Text = articulo.Descripcion;
+                    aux = negocioImagen.ListarPor(ID);
+                    tbxUrl1.Text=aux.UrlImagen.ToString();
+
+                    cbxMarca.SelectedValue = articulo.Marca.Id;
+                    cbxCat.SelectedValue = articulo.Categoria.Id;
+                    tbxPrecio.Text = articulo.Precio.ToString();
+
+                }
             }
             catch (Exception ex)
             {
@@ -47,21 +75,35 @@ namespace TrabajoPractico2
 
         private void btnModificarGuardar_Click(object sender, EventArgs e)
         {
-            Articulo agregarArticulo = new Articulo();
             NegocioArticulo AgregarNegocio = new NegocioArticulo();
             Imagen AgregarImagen = new Imagen();
             NegocioImagen agregarNegocioIma = new NegocioImagen();
             try
-            { 
-                agregarArticulo.CodArt = tbxCodArt.Text; 
-                agregarArticulo.Nombre = tbxNombre.Text;
-                agregarArticulo.Descripcion = tbxDescrip.Text;
-                agregarArticulo.Marca = (Marca)cbxMarca.SelectedItem;
-                agregarArticulo.Categoria = (Categoria)cbxCat.SelectedItem;
-                agregarArticulo.Precio = Convert.ToDecimal(tbxPrecio.Text);
+            {
+                if (articulo == null)
+                {
+                    articulo = new Articulo();
+                }
+                articulo.CodArt = tbxCodArt.Text;
+                articulo.Nombre = tbxNombre.Text;
+                articulo.Descripcion = tbxDescrip.Text;
+                articulo.Marca = (Marca)cbxMarca.SelectedItem;
+                articulo.Categoria = (Categoria)cbxCat.SelectedItem;
+                articulo.Precio = Convert.ToDecimal(tbxPrecio.Text);
                 AgregarImagen.UrlImagen = tbxUrl1.Text;
-                AgregarNegocio.AgregarNuevoArt(agregarArticulo, AgregarImagen);
+                if(articulo.Id != 0)
+                {
+                
+                }
+                else
+                {
+                
+                AgregarNegocio.AgregarNuevoArt(articulo, AgregarImagen);
                 agregarNegocioIma.AgregarNuevaIma(AgregarImagen);
+
+                }
+                
+                
                 this.Close();
 
                 MessageBox.Show("Agregado Exitosamente");
@@ -103,7 +145,7 @@ namespace TrabajoPractico2
             }
             catch (Exception ex)
             {
-                pcbArticulos.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+                pcbArticulos.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDLGVl2FArnrtfhtWTomWS_DFPOOG91lPQMsyY4Av4wA&s");
             }
         }
         private void tbxUrl1_Leave(object sender, EventArgs e)
@@ -122,6 +164,16 @@ namespace TrabajoPractico2
         }
 
         private void lblUrl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cbxMarca_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

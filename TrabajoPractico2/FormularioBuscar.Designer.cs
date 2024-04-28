@@ -39,20 +39,20 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(231, 214);
+            this.textBox1.Location = new System.Drawing.Point(219, 206);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(385, 31);
+            this.textBox1.Size = new System.Drawing.Size(337, 31);
             this.textBox1.TabIndex = 0;
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(471, 79);
+            this.comboBox1.Location = new System.Drawing.Point(437, 89);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(231, 34);
+            this.comboBox1.Size = new System.Drawing.Size(203, 34);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -60,7 +60,7 @@
             // 
             this.lblCriterioBusqueda.AutoSize = true;
             this.lblCriterioBusqueda.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCriterioBusqueda.Location = new System.Drawing.Point(130, 82);
+            this.lblCriterioBusqueda.Location = new System.Drawing.Point(114, 92);
             this.lblCriterioBusqueda.Name = "lblCriterioBusqueda";
             this.lblCriterioBusqueda.Size = new System.Drawing.Size(317, 26);
             this.lblCriterioBusqueda.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             this.lblBusqueda.AutoSize = true;
             this.lblBusqueda.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBusqueda.Location = new System.Drawing.Point(321, 177);
+            this.lblBusqueda.Location = new System.Drawing.Point(284, 161);
             this.lblBusqueda.Name = "lblBusqueda";
             this.lblBusqueda.Size = new System.Drawing.Size(197, 26);
             this.lblBusqueda.TabIndex = 3;
@@ -80,10 +80,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(231, 284);
+            this.button1.Location = new System.Drawing.Point(219, 268);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 59);
+            this.button1.Size = new System.Drawing.Size(127, 66);
             this.button1.TabIndex = 4;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
@@ -92,21 +92,21 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(471, 284);
+            this.button2.Location = new System.Drawing.Point(429, 268);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 59);
+            this.button2.Size = new System.Drawing.Size(127, 66);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Voy a tener suerte";
+            this.button2.Text = "Salir";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormularioBuscar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 416);
+            this.ClientSize = new System.Drawing.Size(763, 407);
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -114,6 +114,7 @@
             this.Controls.Add(this.lblCriterioBusqueda);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
+            this.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormularioBuscar";

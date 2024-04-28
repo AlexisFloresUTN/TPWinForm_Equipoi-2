@@ -1,4 +1,5 @@
-﻿using NegocioTp;
+﻿using DominioTp;
+using NegocioTp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,33 @@ namespace TrabajoPractico2
         private void dgvCategorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            NegocioCategoria negocio = new NegocioCategoria();
+            Categoria seleccionado = new Categoria();
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿De verdad querés eliminar esta Categoria?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Categoria)dgvCategorias.CurrentRow.DataBoundItem;
+                    negocio.EliminarCategoria(seleccionado.Id);
+                    Cargar();
+                }
+
+            }
+            catch (Exception EX)
+            {
+
+                MessageBox.Show(EX.ToString()); ;
+            }
         }
     }
 }

@@ -18,7 +18,7 @@ namespace NegocioTp
 
             try
             {
-                datos.SetearConsulta("SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, Precio FROM ARTICULOS A, CATEGORIAS C, MARCAS M where C.Id= A.IdCategoria and A.IdMarca = M.Id");
+                datos.SetearConsulta("SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, Precio, A.IdMarca, A.IdCategoria FROM ARTICULOS A, CATEGORIAS C, MARCAS M where C.Id= A.IdCategoria and A.IdMarca = M.Id");
                 datos.EjecutarLectura();
 
                 while (datos.Lector.Read())
@@ -29,8 +29,10 @@ namespace NegocioTp
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
                     aux.Marca = new Marca();
+                    aux.Marca.Id = (int)datos.Lector["IdMarca"];
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
                     aux.Categoria = new Categoria();
+                    aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
                     aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
                     aux.Precio = (Decimal)datos.Lector["Precio"];
 
@@ -71,6 +73,24 @@ namespace NegocioTp
                 datos.CerrarConexion();
             }
 
+        }
+        public void EliminarArticulo(int id)
+        {
+            try
+            {
+                NegocioImagen negocioImagen = new NegocioImagen();
+                AccesoDatos datos = new AccesoDatos();
+                datos.SetearConsulta("delete from ARTICULOS where id = @Id");
+                negocioImagen.EliminarImagen(id);
+                datos.setearParametro("@Id", id);
+
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
