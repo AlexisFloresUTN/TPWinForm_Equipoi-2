@@ -103,6 +103,31 @@ namespace NegocioTp
             }
 
         }
+        
+        public void ModificarImagen(Imagen nueva)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+               
+                datos.SetearConsulta("UPDATE IMAGENES SET IdArticulo=@IdArticulo, ImagenUrl=@ImagenUrl where Id="+nueva.Id+"");
+                datos.setearParametro("@IdArticulo", nueva.IdArticulo);
+                datos.setearParametro("ImagenUrl", nueva.UrlImagen);
+                datos.ejecutarAccion();
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+
+        }
         public void EliminarImagen(int idArticulo)
         {
             try

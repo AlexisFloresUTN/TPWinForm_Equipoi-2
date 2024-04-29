@@ -46,13 +46,16 @@ namespace TrabajoPractico2
             
             try
             {
+                
                 if (articulo != null)
                 {
                     int ID = articulo.Id;
+                    aux = negocioImagen.ListarPor(ID);
                     tbxCodArt.Text = articulo.CodArt.ToString();
                     tbxNombre.Text = articulo.Nombre;
                     tbxDescrip.Text = articulo.Descripcion;
-                    aux = negocioImagen.ListarPor(ID);
+                    
+                    
                     tbxUrl1.Text=aux.UrlImagen.ToString();
 
                     cbxMarca.SelectedValue = articulo.Marca.Id;
@@ -90,23 +93,26 @@ namespace TrabajoPractico2
                 articulo.Marca = (Marca)cbxMarca.SelectedItem;
                 articulo.Categoria = (Categoria)cbxCat.SelectedItem;
                 articulo.Precio = Convert.ToDecimal(tbxPrecio.Text);
+                AgregarImagen = agregarNegocioIma.ListarPor(articulo.Id);
                 AgregarImagen.UrlImagen = tbxUrl1.Text;
                 if(articulo.Id != 0)
                 {
-                
+                    AgregarNegocio.ModificarArticulo(articulo);
+                    agregarNegocioIma.ModificarImagen(AgregarImagen);
+                    MessageBox.Show("Agregado Modificado");
                 }
                 else
                 {
                 
                 AgregarNegocio.AgregarNuevoArt(articulo, AgregarImagen);
                 agregarNegocioIma.AgregarNuevaIma(AgregarImagen);
-
+                MessageBox.Show("Agregado Exitosamente");
                 }
                 
                 
                 this.Close();
 
-                MessageBox.Show("Agregado Exitosamente");
+                
 
             }
             catch (Exception ex)

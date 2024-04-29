@@ -74,6 +74,27 @@ namespace NegocioTp
             }
 
         }
+        public void ModificarArticulo(Articulo nuevo)
+        {
+            AccesoDatos datos=new AccesoDatos();
+            try
+            {
+                datos.SetearConsulta("update ARTICULOS set Codigo=@Codigo, Nombre=@Nombre, Descripcion=@Descripcion, IdMarca=@IdMarca, IdCategoria=@IdCategoria, Precio= @Precio where Id="+nuevo.Id+"");
+                datos.setearParametro("@Codigo", nuevo.CodArt);
+                datos.setearParametro("@Nombre", nuevo.Nombre);
+                datos.setearParametro("@Descripcion", nuevo.Descripcion);
+                datos.setearParametro("@IdMarca", nuevo.Marca.Id);
+                datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
+                datos.setearParametro("@Precio", nuevo.Precio);
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+                                     
+        }
         public void EliminarArticulo(int id)
         {
             try
