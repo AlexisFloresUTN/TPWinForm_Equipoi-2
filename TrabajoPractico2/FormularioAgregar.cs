@@ -99,7 +99,7 @@ namespace TrabajoPractico2
                 {
                     AgregarNegocio.ModificarArticulo(articulo);
                     agregarNegocioIma.ModificarImagen(AgregarImagen);
-                    MessageBox.Show("Agregado Modificado");
+                    MessageBox.Show("Modificado exitosamente");
                 }
                 else
                 {
